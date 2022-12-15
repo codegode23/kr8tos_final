@@ -32,12 +32,15 @@ section{
 
 header{
 width: 100%;
-padding: 5px 5px;
+padding: 10px 5px;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
  transition: 0.4s ;
- margin-bottom: 4%;
+ position: fixed;
+ top: 0;
+ z-index: 999;
+ background-color: #fff;
 }
 header .log{
     display: flex;
@@ -69,7 +72,7 @@ header .narbar ul li a{
     color: #333;
     font-weight: 400;
 }
-
+header .narbar ul li a.active,
 header .narbar ul li a:hover{
     font-size: 1.4rem;
     font-weight: 400;
@@ -93,6 +96,7 @@ header .narbar ul li a{
     font-weight: 400;
 }
 
+header .narbar ul li a.active,
 header .narbar ul li a:hover{
     font-size: 1rem;
     font-weight: 400;
@@ -120,11 +124,11 @@ header .narbar ul li a{
     font-weight: 400;
 }
 
+header .narbar ul li a.active,
 header .narbar ul li a:hover{
     font-size: .8rem;
     font-weight: 500;
 }
-
 
 }
 
@@ -134,6 +138,7 @@ header .narbar ul li a{
     font-weight: 400;
 }
 
+header .narbar ul li a.active,
 header .narbar ul li a:hover{
     font-size: .5rem;
     font-weight: 400;
@@ -147,6 +152,7 @@ header .narbar ul li a:hover{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 10vw;
 }
 
 .container .waves{
@@ -163,23 +169,40 @@ header .narbar ul li a:hover{
     top: 5vw;
     gap: 1vw;
 }
-
-.icons i{
+/* 
+.icons a {
     border: 1px solid black;
     font-size: 1.5vw;
     padding: 1vw;
     border-radius: 50px;
-    cursor: pointer;
+
     color: #333;
     z-index: 2;
     
 }
 
-.icons i:hover{
+.icons a :hover{
     border: 1px solid black;
     color: #fff;
    background: #333;
     
+} */
+
+
+.top .icons a{
+    border: 1px solid black;
+    font-size: 1.5vw;
+    padding: 1vw;
+    border-radius: 50px;
+    color: #333;
+    z-index: 2;
+}
+
+
+.icons a:hover{
+    border: 1px solid #333;
+    color: #fff;
+   background: #333;
 }
 
 .top img{
@@ -241,7 +264,12 @@ header .narbar ul li a:hover{
 
 @media screen and (max-width:500px) {
 
-    .icons i{
+    
+.container .top{
+    margin-top: 16vw;
+}
+
+    .top .icons a{
         font-size: 3vw;
         padding: .9vw;
     }
@@ -547,7 +575,8 @@ header .narbar ul li a:hover{
 .extra-info{
     text-align: center;
     margin-top: 36%; 
-    border-bottom: 13px solid rgb(105, 9, 105);
+    border-bottom: 13px solid #2D1941;
+   
 }
 
 .extra-info h2{
@@ -563,13 +592,13 @@ header .narbar ul li a:hover{
 }
 
 .extra-info span{
-    color: rgb(105, 9, 105);
+    color: #a427af;
 }
 
 @media screen and (max-width:400px) {
 
     .extra-info{
-        margin-top: 19%;
+        margin-top: 20vw;
     }
 /*     
 .extra-info h2{
@@ -598,12 +627,12 @@ header .narbar ul li a:hover{
 
 .soft-title{
     text-align: center;
-    margin-top: -1%;
+    margin-top: -1vw;
 }
 
 .soft-title h1{
     font-size: 2vw;
-    letter-spacing: 4px;
+    letter-spacing: 3vw;
     font-weight: 100;
 }
 
@@ -622,11 +651,11 @@ header .narbar ul li a:hover{
 .soft-left h1{
     align-items: center;
     font-weight: 200;
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 .soft-left i{
-    font-size: 1.5vw;
+    font-size: 2vw;
     color: #333;
 
 }
@@ -700,6 +729,13 @@ header .narbar ul li a:hover{
 
 @media screen and (max-width: 400px) {
     
+    .soft-title h1{
+        font-size: 3vw;
+        letter-spacing: 3vw;
+        font-weight: 100;
+    }
+    
+
     .soft-title{
         margin-top: -12%;
     }
@@ -714,11 +750,11 @@ header .narbar ul li a:hover{
 }
 
 .soft-left h1{
-    font-size: 4vw;
+    font-size: 5vw;
 }
 
 .soft-left i{
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 .soft-left span{
@@ -726,7 +762,7 @@ header .narbar ul li a:hover{
 }
 
 .soft-left p{
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 .soft-right{
@@ -776,13 +812,13 @@ header .narbar ul li a:hover{
 #software .works h1{
     font-size: 1.4vw;
     font-weight: 200;
-    color: rgb(98, 0, 128);
+    color: #35235D;
 }
 
 #software .line{
     width: 100%;
     height: 20px;
-    background: rgb(67, 3, 87);
+    background-color:  #2D1941;
     margin-top: 4%;
 }
 
@@ -796,15 +832,15 @@ header .narbar ul li a:hover{
 
 #digital{
     width: 100%;
-    background-color:  rgb(67, 3, 87);
     margin-top: -1vw;
+    background-color:  #1B0040;
 }
 
 .digi-container{
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color:  rgb(67, 3, 87);
+   
 }
 
 .digi-container .digi-top{
@@ -920,7 +956,7 @@ header .narbar ul li a:hover{
     position: absolute;
     top: -20vw;
     left: -7vw;
-    z-index: 0;
+    z-index: 1;
     width: 32vw;
 }
 
@@ -1345,3 +1381,178 @@ header .narbar ul li a:hover{
 
 
 /*Contact Us Section Ends*/
+
+
+/*Portfolio Section Starts*/
+
+#porfolio{
+    width: 100%;
+}
+
+
+.port-container{
+    overflow-x: auto;
+    padding: .4vw;
+}
+
+.port-container .port-nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+     scroll-behavior: smooth;
+     position: relative;
+     flex-wrap: wrap;
+}
+
+.port-container .port-nav .buttons{
+    padding: .8vw;
+    font-size: 1.7vw;
+    color: #fff;
+    background: purple;
+    cursor: pointer;
+    margin-left: 2vw;
+    margin-top: 2vw;
+}
+
+.port-container .port-nav .buttons.active{
+    border: none;
+    background: rgb(211, 9, 36);
+    color: #fff;
+
+}
+
+.port-container .download{
+    margin-top: 3vw;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.port-container .download p{
+    padding: 2vw;
+    font-size: 1.7vw;
+    color: #fff;
+    background: rgb(63, 36, 214);
+    cursor: pointer;
+    margin-bottom: 2vw;
+}
+
+
+.port-container .download p:hover{
+    background: rgb(35, 17, 134);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:500px) {
+    
+.port-container .port-nav .buttons{
+    font-size: 2.6vw;
+    color: #fff;
+}
+
+.port-container .download p{
+    font-size: 2.6vw;
+}
+
+}
+
+
+.port-container .port-items .port-art {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25vw, 2fr));
+    grid-auto-rows: minmax(10vw, max-content);
+    grid-row-gap: 1.8vw; */
+    margin-top: 3vw;
+    padding: .4vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.port-container .port-items .port-art .group1 img{
+    width: 70vw;
+    margin-top: .4%;
+}
+
+.port-container .port-items .software{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25vw, 2fr));
+    grid-auto-rows: minmax(10vw, max-content);
+    grid-row-gap: 1.8vw;
+    margin-top: 3vw;
+    padding: .4vw;
+    text-align: center;
+    align-items: center;
+    
+    border: 1px solid black;
+}
+
+
+.port-container .port-items .software .software-box{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-left: 2vw;
+}
+
+.port-container .port-items .software .software-box img{
+    width: 29vw;
+}
+
+.port-container .port-items .software .software-box a{
+    text-decoration: none;
+    color: #333;
+    font-size: 2vw;
+}
+
+.port-container .port-items .software .software-box a:hover{
+   background: purple;
+    color: #fff;
+}
+
+
+@media screen and (max-width:600px) {
+
+    
+.port-container .port-items .software{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(55vw, 2fr));
+    grid-auto-rows: minmax(10vw, max-content);
+    grid-row-gap: 1.8vw;
+    margin-top: 3vw;
+    padding: .4vw;
+    text-align: center;
+    align-items: center;
+}
+
+    
+.port-container .port-items .software .software-box{
+    width: 90vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(153, 44, 144);
+    margin-left: 2vw;
+}
+
+.port-container .port-items .software .software-box img{
+    width: 89vw;
+    object-fit: contain;
+}
+
+.port-container .port-items .software .software-box a{
+    text-decoration: none;
+    color: #333;
+    font-size: 4vw;
+}
+
+}
+
+
+
+/*Portfolio Section Ends*/
