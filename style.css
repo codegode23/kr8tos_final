@@ -1487,8 +1487,6 @@ header .narbar ul li a:hover{
     padding: .4vw;
     text-align: center;
     align-items: center;
-    
-    border: 1px solid black;
 }
 
 
@@ -1496,8 +1494,9 @@ header .narbar ul li a:hover{
     width: 30vw;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
     margin-left: 2vw;
+    border-radius: 3px;
 }
 
 .port-container .port-items .software .software-box img{
@@ -1511,7 +1510,7 @@ header .narbar ul li a:hover{
 }
 
 .port-container .port-items .software .software-box a:hover{
-   background: purple;
+   background: rgba(0, 0, 0, 0.3);
     color: #fff;
 }
 
@@ -1536,7 +1535,6 @@ header .narbar ul li a:hover{
     height: 50vw;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgb(153, 44, 144);
     margin-left: 2vw;
 }
 
