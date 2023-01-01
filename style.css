@@ -192,8 +192,11 @@ header .narbar ul li a:hover{
 .top .icons a{
     border: 1px solid black;
     font-size: 1.5vw;
-    padding: 1vw;
+    padding-top: .5vw;
+    height: 3vw;
+    width: 3vw;
     border-radius: 50px;
+    text-align: center;
     color: #333;
     z-index: 2;
 }
@@ -239,15 +242,15 @@ header .narbar ul li a:hover{
 }
 
 .bottom .info p{
-    font-size: 2vw;
+    font-size: 2.2vw;
     color: #333;
 }
 
 .bottom a {
     font-size: .9rem;
-    padding: .7rem 2rem;
+    padding: .6rem .8rem;
     margin-top: 2%;
-    background: #000;
+    background: #2C235C;
     color: #fff;
     cursor: pointer;
     border: none;
@@ -256,9 +259,8 @@ header .narbar ul li a:hover{
 }
 
 .bottom a:hover{
-    background: #fff;
-    color: #000;
-    border: .8px solid black;
+    background: #CB1254;
+    border-color: #CB1254;
 }
 
 
@@ -268,11 +270,14 @@ header .narbar ul li a:hover{
 .container .top{
     margin-top: 16vw;
 }
-
-    .top .icons a{
-        font-size: 3vw;
-        padding: .9vw;
-    }
+.top .icons a{
+    font-size: 3.5vw;
+    padding-top: .9vw;
+    height: 6vw;
+    width: 6vw;
+    border-radius: 50px;
+    text-align: center;
+}
 /* 
     .container .waves{
         top: 34vw;
@@ -287,7 +292,7 @@ header .narbar ul li a:hover{
     }
 
     .bottom .info p{
-        font-size: 3.2vw;
+        font-size: 3.4vw;
     } 
     
      
@@ -335,7 +340,7 @@ header .narbar ul li a:hover{
 }
 
 .left-side p{
-    font-size: 2vw;
+    font-size: 2.2vw;
     color: #333;
 }
 
@@ -353,20 +358,20 @@ header .narbar ul li a:hover{
 
 .create-container .right-side .img-1{
     position: absolute;
-    top: 20%;
-    left: 18%;
+    top: 8vw;
+    left: 8vw;
     z-index: 1;
 } 
 .create-container .right-side .img-2{
     position: absolute;
-    right: 13%;
-    top: 70%;
+    right: 6vw;
+    top: 20vw;
     z-index: 3;
 }
 
 .create-container .right-side .img-3{
     position: absolute;
-    top: 140%;
+    top: 40vw;
     left: 0;
     z-index: 1;
 
@@ -383,10 +388,24 @@ header .narbar ul li a:hover{
     height: 1vw;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
     #creative{
         margin-top: -8%;
     }
+
+    .create-container{
+        flex-direction: column;
+    }
+
+.create-container .left-side{
+    width: 100%;
+}
+
+    
+.create-container .right-side{
+    margin-left: 50vw;
+    margin-top: -3vw;
+}
 
     
 .left-side .title h4{
@@ -398,11 +417,15 @@ header .narbar ul li a:hover{
 }
 
 .left-side p{
-    font-size: 2.5vw;
+    font-size: 3.4vw;
 }
 
 
-.create-container .right-side .img-1{
+.create-container .right-side img{
+    width: 24vw;
+}
+
+/* .create-container .right-side .img-1{
     top: 28%;
     left: 18%;
 } 
@@ -415,14 +438,14 @@ header .narbar ul li a:hover{
     top: 100%;
     left: 0;
 
-} 
+}  */
 
 
 .lines{
     display: flex;
     flex-direction: column;
     gap: 1vw;
-    margin-top: 11vw;
+    margin-top: 41vw;
 }
 
 .lines img{
@@ -444,11 +467,17 @@ header .narbar ul li a:hover{
 }
 
 .studio .left-side .title h1{
-    font-size: 3vw;
+    font-size: 4vw;
     letter-spacing: 2px;
     color: #000;
     font-weight: 700;
 }
+
+.studio .left-side p{
+    font-size: 2.2vw;
+    color: #333;
+}
+
 
 .studio .right-side{
     position: relative;
@@ -462,21 +491,21 @@ header .narbar ul li a:hover{
 
 .studio .right-side .img-1{
     position: absolute;
-    top: 45%;
+    top: 12vw;
     right: 0;
     z-index: 1;
 } 
 .studio .right-side .img-2{
     position: absolute;
-    top: 120%;
-    left: -16%;
+    top: 32vw;
+    left: -2vw;
     width: 26vw;
     z-index: 2;
 }
 
 .studio .right-side .img-3{
     position: absolute;
-    top: 110%;
+    top: 30vw;
     right: 0;
     z-index: 3;
 
@@ -518,15 +547,16 @@ header .narbar ul li a:hover{
 
 /*Alternative studio for 300px */
 
-@media screen and (max-width:400px){
+@media screen and (max-width:500px){
 
     .studio{
         flex-direction: column;
+        margin-top: 30vw;
     }
 
-    
+
 .studio .left-side .title h1{
-    font-size: 6vw;
+    font-size: 8vw;
     letter-spacing: 3px;
     color: #000;
     font-weight: 700;
@@ -536,8 +566,7 @@ header .narbar ul li a:hover{
     }
 
     .studio .left-side p{
-        font-size: 3vw;
-        color: #333;
+        font-size: 4vw;
     }
 
     .studio .right-side{
@@ -548,6 +577,36 @@ header .narbar ul li a:hover{
     }
 
     
+.studio .right-side img{
+    width: 28vw;
+}
+    
+.studio .right-side .img-1{
+    position: absolute;
+    top: -1vw;
+    right: 0;
+    z-index: 1;
+} 
+.studio .right-side .img-2{
+    position: absolute;
+    top: 25vw;
+   left: 46vw;
+    width: 33vw;
+    z-index: 2;
+}
+
+.studio .right-side .img-3{
+    position: absolute;
+    top: 21vw;
+    right: 0;
+    z-index: 3;
+
+} 
+
+.extra-info{
+    margin-top: 4vw;
+}
+/*     
 .studio .right-side .img-1{
     position: absolute;
     top: 6%;
@@ -556,7 +615,7 @@ header .narbar ul li a:hover{
 } 
 .studio .right-side .img-2{
     position: absolute;
-    top: 68%;
+    top: 120%;
    left: 56%;
     width: 26vw;
     z-index: 2;
@@ -564,19 +623,18 @@ header .narbar ul li a:hover{
 
 .studio .right-side .img-3{
     position: absolute;
-    top: 60%;
+    top: 98%;
     right: 0;
     z-index: 3;
 
-} 
+}  */
 
 }
 
 .extra-info{
     text-align: center;
-    margin-top: 36%; 
+    margin-top: 40vw; 
     border-bottom: 13px solid #2D1941;
-   
 }
 
 .extra-info h2{
@@ -592,28 +650,12 @@ header .narbar ul li a:hover{
 }
 
 .extra-info span{
-    color: #a427af;
+    background: -webkit-linear-gradient(#35235D, #CB1254);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-@media screen and (max-width:400px) {
 
-    .extra-info{
-        margin-top: 20vw;
-    }
-/*     
-.extra-info h2{
-    font-size: 18px;
-    letter-spacing: 4px;
-    font-weight: 300;
-}
-
-.extra-info h1{
-    font-size: 30px;
-    letter-spacing: 4px;
-    font-weight: 200;
-    
-} */
-}
 
 /*Creative Section Ends*/
 
@@ -631,8 +673,8 @@ header .narbar ul li a:hover{
 }
 
 .soft-title h1{
-    font-size: 2vw;
-    letter-spacing: 3vw;
+    font-size: 2.5vw;
+    letter-spacing: 2vw;
     font-weight: 100;
 }
 
@@ -650,14 +692,12 @@ header .narbar ul li a:hover{
 
 .soft-left h1{
     align-items: center;
-    font-weight: 200;
+    font-weight: 100;
     font-size: 3vw;
 }
 
 .soft-left i{
-    font-size: 2vw;
-    color: #333;
-
+    font-size: 2.2vw;
 }
 
 .soft-left span{
@@ -667,7 +707,7 @@ header .narbar ul li a:hover{
 }
 
 .soft-left p{
-    font-size: 2vw;
+    font-size: 2.2vw;
     color: #333;
 }
 
@@ -683,7 +723,7 @@ header .narbar ul li a:hover{
 }
 
 .show-img img{
-    width: 17vw;
+    width: 19vw;
 }
 
 .show-img .limg{
@@ -727,18 +767,15 @@ header .narbar ul li a:hover{
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     
     .soft-title h1{
-        font-size: 3vw;
+        font-size: 4vw;
         letter-spacing: 3vw;
         font-weight: 100;
+        margin-top: -3vw;
     }
     
-
-    .soft-title{
-        margin-top: -12%;
-    }
 
 .soft-container{
     flex-direction: column;
@@ -746,7 +783,7 @@ header .narbar ul li a:hover{
 
 .soft-left{
     width: 100%;
-     margin-bottom: 6%;
+     margin-bottom: 12vw;
 }
 
 .soft-left h1{
@@ -762,7 +799,9 @@ header .narbar ul li a:hover{
 }
 
 .soft-left p{
-    font-size: 4vw;
+    font-size: 3.4vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 
 .soft-right{
@@ -1054,7 +1093,9 @@ header .narbar ul li a:hover{
 
 .digi-bottom h1{
     font-size: 5.5vw;
-    color: rgb(179, 22, 179);
+    background: -webkit-linear-gradient(#35235D, #CB1254);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
       font-weight: 300;
       border-bottom: 2.5vw solid #fff;
       padding-bottom: .5vw;
