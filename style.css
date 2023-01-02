@@ -190,7 +190,7 @@ header .narbar ul li a:hover{
 
 
 .top .icons a{
-    border: 1px solid black;
+    border: 1px solid #333;
     font-size: 1.5vw;
     padding-top: .5vw;
     height: 3vw;
@@ -203,9 +203,9 @@ header .narbar ul li a:hover{
 
 
 .icons a:hover{
-    border: 1px solid #333;
+    border: #2C235C;
     color: #fff;
-   background: #333;
+   background: #2C235C;
 }
 
 .top img{
@@ -932,14 +932,15 @@ header .narbar ul li a:hover{
 }
 
 .digi-top .top-left .top-info{
-    font-size: 1.9vw;
+    font-size: 2.2vw;
     color: #fff;
    
 }
 
 .digi-top .top-left .top-info .info2 p{
     font-weight: 200;
-    color: rgb(175, 169, 169);
+    color: rgb(233, 224, 224);
+    font-size: 2.2vw;
    
 }
 
@@ -949,7 +950,7 @@ header .narbar ul li a:hover{
 }
 
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
     .digi-container .digi-top{
         flex-direction: column;
     }
@@ -962,14 +963,21 @@ header .narbar ul li a:hover{
 
     
 .digi-top .top-left .top-info{
-    font-size: 2.7vw;
+    font-size: 3.2vw;
     color: #fff;
 }
 
 
-.digi-top .image img{
-    margin-top: 5%;
+.digi-top .top-left .top-info .info2 p{
+    font-size: 3.2vw;
 }
+
+
+.digi-top .image img{
+    margin-top: 5vw;
+    width: 63vw;
+}
+
 
     
 }
@@ -1000,9 +1008,9 @@ header .narbar ul li a:hover{
 }
 
 .digi-middle .mid-left img{
-    width: 35vw;
-    margin-top: 10vw;
-    margin-left: 7vw;
+    width: 45vw;
+    margin-top: 6vw;
+    margin-left: 5vw;
     z-index: 2;
 }
 
@@ -1012,16 +1020,15 @@ header .narbar ul li a:hover{
     flex-direction: column;
     color: #fff;
     position: relative;
-   
 }
 
 .digi-middle .mid-right p{
     margin-top: 10%;
-    font-size: 2.4vw;
+    font-size: 2.2vw;
     line-height: 2.3vw;
     letter-spacing: .1vw;
     font-weight: 100;
-    color: rgb(175, 169, 169);
+     color: rgb(233, 224, 224);
    
 }
 
@@ -1037,35 +1044,46 @@ header .narbar ul li a:hover{
     top: 25vw;
     right: 4vw;
     z-index: 0;
-    width: 32vw;
-   
+    width: 32vw;  
 }
 
 .digi-container .extra-info1{
     text-align: center;
     margin-top: 4vw;
-   
 }
 
 
 .digi-container .extra-info1 h2{
-    font-size: 2vw;
-    color: rgb(175, 169, 169);
+    font-size: 2.2vw;
+    color: rgb(233, 224, 224);
     width: 100%;
     font-weight: 100;
     letter-spacing: .2vw;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
 
     
 .digi-middle .mid-right p{
-    font-size: 2.7vw;
+    font-size: 3vw;
+    line-height: 3vw;
 }
-    
+
+
+.digi-middle .mid-left .cube-1{
+    width: 34vw;
+}
+
+.digi-middle .mid-right .cube-2{
+    top: 35vw;
+    width: 34vw;  
+}
+
+
 .digi-container .extra-info1 h2{
-    font-size: 2.3vw;
+    font-size: 3.2vw;
 }
+
 }
 
 
@@ -1086,7 +1104,7 @@ header .narbar ul li a:hover{
 
 .digi-bottom h2{
     font-size: 4.5vw;
-    color: rgb(194, 190, 190);
+    color: rgb(235, 232, 232);
     font-weight: 100;
    
 }
@@ -1117,8 +1135,10 @@ header .narbar ul li a:hover{
 
 .serve-title h1{
     font-weight: 200;
-    color: rgb(201, 49, 201);
-    font-size: 2.4vw;
+    background: -webkit-linear-gradient(#35235D, #CB1254);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4vw;
 }
 
 .serve-container{
@@ -1180,8 +1200,7 @@ header .narbar ul li a:hover{
     
 .serve-title h1{
     font-weight: 200;
-    color: rgb(201, 49, 201);
-    font-size: 4vw;
+    font-size: 5vw;
 }
     
 .serve-container{
@@ -1195,11 +1214,11 @@ header .narbar ul li a:hover{
 
 
 .serve-box .serve-info{
-    height: 50vw;
+    height: 53vw;
 }
 
 .serve-container .serve-box{
-    width: 45vw;
+    width: 47vw;
     margin-left: 1vw;
 }
 
@@ -1223,8 +1242,9 @@ header .narbar ul li a:hover{
 
 @media screen and (max-width:300px) {
 
+    
 .serve-box .serve-info{
-    height: 55vw;
+    height: 54vw;
 }
 
 .serve-info .serve-top h3{
@@ -1237,8 +1257,7 @@ header .narbar ul li a:hover{
 }
 
 .serve-info .serve-bottom p{
-    font-size: 2.1vw;
-    line-height: 2.6vw;
+    font-size: 2vw;
 }
 
 }
@@ -1440,27 +1459,28 @@ header .narbar ul li a:hover{
     width: 100%;
     display: flex;
     align-items: center;
-    overflow-x: auto;
-     scroll-behavior: smooth;
+    text-align: center;
      position: relative;
      flex-wrap: wrap;
 }
 
 .port-container .port-nav .buttons{
     padding: .8vw;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     color: #fff;
-    background: purple;
+    background: #48235E;
     cursor: pointer;
-    margin-left: 2vw;
+    margin-left: .7vw;
     margin-top: 2vw;
+    transition: .4s;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.2);
 }
 
 .port-container .port-nav .buttons.active{
     border: none;
-    background: rgb(211, 9, 36);
+    background: #C51354;
     color: #fff;
-
+    box-shadow: none;
 }
 
 .port-container .download{
@@ -1473,17 +1493,19 @@ header .narbar ul li a:hover{
 }
 
 .port-container .download p{
-    padding: 2vw;
+    padding: 1.1vw;
     font-size: 1.7vw;
     color: #fff;
-    background: rgb(63, 36, 214);
+    background: #0C089F;
     cursor: pointer;
     margin-bottom: 2vw;
+    transition: .4s;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.2);
 }
 
 
 .port-container .download p:hover{
-    background: rgb(35, 17, 134);
+    background: #201bc5;
     cursor: pointer;
 }
 
@@ -1491,12 +1513,12 @@ header .narbar ul li a:hover{
 @media screen and (max-width:500px) {
     
 .port-container .port-nav .buttons{
-    font-size: 2.6vw;
+    font-size: 2.2vw;
     color: #fff;
 }
 
 .port-container .download p{
-    font-size: 2.6vw;
+    font-size: 2.2vw;
 }
 
 }
